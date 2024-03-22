@@ -1,0 +1,216 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, #222, #444, black);
+  color: #0f0;
+  font-family: oxygen;
+  letter-spacing: 3px;
+  min-height: 100vh;
+  transition: background-image ease-in-out 1s;
+}
+
+/* Customização do input de botão */
+input[type='button'] {
+  background-color: #444;
+  padding: .5rem;
+  border: black solid 1.5px;
+  color: black;
+  font-weight: bold;
+  text-shadow: 0 0 10px black;
+  margin: .5rem 0;
+  cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.dir-row {
+    flex-direction: row;
+}
+
+.dir-column {
+    flex-direction: column;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+/* Responsividade */
+.apply-flex-with-gap {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsividade */
+.apply-flex-column {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ================================== section id="btn-for-data-exhibition-section" ================================== */
+.bolsonaro-real-votes {
+    color: blue;
+    text-shadow: 0rem 0rem 2rem aqua;
+}
+
+.lula-real-votes {
+    color: red;
+    text-shadow: 0rem 0rem 2rem crimson;
+}
+
+.bolsonaro-real-votes, .lula-real-votes {
+    background-color: #222;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    height: 2.5rem;
+    padding: .3rem;
+    text-align: center;
+    width: 2.5rem;
+}
+
+/* ========================================== section id="voting-section" ========================================== */
+.btn-custom {
+    background-color: #444;
+    border: black solid 1.5px;
+    color: black;
+    font-weight: bold;
+    margin: .5rem 0rem;
+    padding: .5rem;
+    text-shadow: 0rem 0rem .7rem black;
+}
+
+.btn-custom:focus {
+    box-shadow: 0rem 0rem 1.2rem black;
+    outline: none;
+    
+}
+
+/* Plano de fundo que destaca dados a frente */
+.cover {
+    border: black solid 1px;
+    box-shadow: 0 0 10px 0 black;
+    margin: .5rem;
+    padding: .7rem 0rem;
+}
+
+/* Fundo que destaca candidato 13 quando input for 13 */
+.progressist {
+  box-shadow: 0 0 30px 0 red;
+}
+
+/* Fundo que destaca candidato 22 quando input for 13 */
+.republican {
+  box-shadow: 0 0 30px 0 blue;
+}
+
+/* Mensagem pós voto */
+.vote-registered {
+  color: black;
+  font-size: 1.5rem;
+  text-shadow: 0 0 1rem black;
+}
+
+/* Suavizar mudança de valor das porcentagens */
+.percentage-smooth {
+  width: 100%;
+  transition: width linear 1s;
+}
+
+
+
+
+
+/* ==================================== section id="politicians-photos-section" ==================================== */
+.politician-image > * {
+    border: #fffccc solid 1px;
+    border-radius: 50%;
+    height: 150px;
+    margin: 0rem 1rem;
+    width: 150px;
+}
+
+/* =========================================== section id="voting-score" =========================================== */
+.report {
+    color: black;
+}
+
+.report > * {
+    box-shadow: 0 0 10px 0 black; 
+    padding: .3rem 1rem;
+}
+
+.report > div:nth-of-type(1) {
+  background-color: mediumseagreen;
+}
+
+.report > div:nth-of-type(2) {
+  background-color: red;
+}
+
+.report > div:nth-of-type(3) {
+  background-color: blue;
+}
+
+/* ========================================= section id="percentages-panel" ========================================= */
+.progress-bars {
+    background-image: linear-gradient(to top, #ede74e, #417c83);
+    border-radius: .4rem;
+    color: #fff;
+    margin: .5rem 5rem;
+    padding: .5rem 1rem;
+}
+
+.subject {
+    color: indigo;
+    font-size: .8rem;
+    padding: .4rem;
+}
+
+.lula-percentage {
+    background-color: red;
+    box-shadow: 0 0 10px 0 red;
+}
+
+.bolsonaro-percentage {
+    background-color: blue;
+    box-shadow: 0 0 10px 0 blue;
+}
+
+/* Extender a região das porcentagens */
+.progress-bars-box {
+    width: 100%;
+}
+
+/* ========================================= Customizações estilo Bootstrap ========================================= */
+.std-m-small {
+    margin: .5rem;
+}
+
+.std-m-avg {
+    margin: 1.5rem;
+}
+
+.std-m-large {
+    margin: 3rem;
+}
+
+.std-p-small {
+    padding: .5rem;
+}

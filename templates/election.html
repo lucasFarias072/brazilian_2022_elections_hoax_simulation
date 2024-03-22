@@ -1,0 +1,103 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../static/css/election.css" rel="stylesheet" type="text/css">
+        <title>2022 elections - hoax simulation</title>
+    </head>
+
+    <body>
+
+        <main>
+            
+            <!-- About: two buttons to show/hide real data about voting and respective texts -->
+            <section id="btn-for-data-exhibition-section">
+              
+                <div class="flex gap std-m-small dir-row">
+                    <input type="button" value="ver dados reais" class="real-data-show">
+                    <input type="button" value="esconder" class="real-data-hide">
+                    <p class="bolsonaro-real-votes"></p>
+                    <p class="lula-real-votes"></p>
+                </div>
+
+            </section>
+            
+            <!-- About: where the photos of the two candidates are -->
+            <section id="politicians-photos-section">
+              
+              <div class="politician-image std-m-avg flex dir-row">
+                  <img src="../static/img/lula.png" alt="Foto do candidato à presidência Luíz Inácio" class="lula-pict">
+                  <img src="../static/img/bolsonaro.png" alt="Foto do candidato à presidência Jair Bolsonaro" class="bolsonaro-pict">
+              </div>
+
+            </section>
+            
+            <!-- About: Inputs area and button for voting -->
+            <section id="voting-section">
+                
+                <form action="index.html" method="get" id="voting-form" class="flex dir-column">
+                    
+                    <div class="cover std-p-small flex dir-column">
+                        <label for="person"></label>
+                        <label for="vote"></label>
+                        
+                        <input type="text" id="person" class="btn-custom" placeholder="Seu nome (opcional)">
+                        <input type="text" id="vote" class="btn-custom" placeholder="Número do seu candidato">
+                        <input type="button" value="Votar" class="submit-btn" form="voting-form">
+                    </div>
+
+                </form>
+      
+            </section>
+
+            <!-- About: where the msg: "Voto computado com sucesso" is placed temporarily -->
+            <section id="custom-msg-after-voting">
+              <div class="vote-registered std-m-small flex dir-row"></div>
+            </section>
+            
+            <!-- About: three panels with voting info (fake ones) -->
+            <section id="voting-score">
+                <div class="report gap flex dir-row">
+                
+                    <!-- the div children from "report" above are getting css content, so they are not being removed -->
+                    <div>
+                        <span>computados:</span>
+                        <span class="overall-votes"></span>
+                    </div>
+                    
+                    <div>
+                        <span>votos Lula:</span>
+                        <span class="lula-div"></span>
+                    </div>
+                    
+                    <div>
+                        <span>votos Bolsonaro:</span>
+                        <span class="bolsonaro-div"></span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- About: where percentage data is and is changed -->
+            <section id="percentages-panel">
+                <div class="flex dir-column progress-bars">
+                    <!-- Reactivate this div to have a linear progress percentage bar -->
+                    <!-- <div class="progress-bars-box"> -->
+                    <p class="subject">Luíz Inácio</p>
+                    <p class="percentage-smooth lula-percentage">0</p>
+                    <p class="subject">Jair Bolsonaro</p>
+                    <p class="percentage-smooth bolsonaro-percentage">0</p>
+                    <!-- </div> -->
+                </div>
+            </section>
+    
+        </main>
+      
+    <script src="../static/js/election.js" type="text/javascript"></script>
+    </body>
+
+</html>

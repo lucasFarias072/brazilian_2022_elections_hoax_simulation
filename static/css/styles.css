@@ -1,0 +1,159 @@
+
+
+body {
+    background-color: #222;
+    font-family: consolas;
+}
+
+/* Ver dados reais, Esconder dados reais (estética) */
+.real-data-show,
+.real-data-hide {
+    padding: .4rem 1rem;
+    margin: 0 .5rem;
+    border-radius: .5rem;
+    color: #fff;
+    box-shadow: 0 0 10px #fff;
+    cursor: pointer;
+}
+
+.bolsonaro-real-votes,
+.lula-real-votes {
+    color: #fff;
+    margin: 1rem;
+}
+
+/* Configuração da div que contêm as 2 fotos dos candidatos */
+.politician-image {
+    display: flex; 
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+/* Configuração das 2 fotos dos candidatos */
+.politician-image > * {
+    margin: 0 1rem;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    border: black solid 2px;
+}
+
+/* Fundo que destaca candidato 13 quando input for 13 */
+.progressist {
+    box-shadow: 0 0 30px 0 red;
+}
+
+/* Fundo que destaca candidato 22 quando input for 13 */
+.republican {
+    box-shadow: 0 0 30px 0 blue;
+}
+
+/* Formulário (ajustes) */
+.form {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+/* Seu nome, número do seu candidato (ajuste para separar inputs) */
+.form form > * {
+    margin: 1rem 0;
+}
+
+/* Votar (ajuste) */
+.send {
+    text-align: center;
+}
+
+/* Seu nome, número do seu candidato (estética) */
+input {
+    background-color: black;
+    color: #0f0;
+    border: #222 solid 1px;
+    border-radius: .4rem;
+    padding: .2rem 1rem;
+}
+
+/* 
+Votos computados, Votos para Lula, Votos para Bolsonaro
+Voto computado com sucesso
+*/
+.vote-registered,
+.report {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    color: #fff;
+    gap: 1rem;
+    margin: .5rem;
+}
+
+/* Votos computados: int (estética) */
+.report > div:nth-of-type(1) {
+    background-color: yellowgreen;
+    box-shadow: 0 0 1rem yellowgreen; 
+}
+
+/* Votos para Lula: int (estética) */
+.report > div:nth-of-type(2) {
+    background-color: red;
+    box-shadow: 0 0 1rem red; 
+}
+
+/* Votos para Bolsonaro: int (estética) */
+.report > div:nth-of-type(3) {
+    background-color: blue;
+    box-shadow: 0 0 1rem blue; 
+}
+
+/* Votos computados, Votos para Lula, Votos para Bolsonaro (ajustes globais) */
+.report > * {
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
+
+/* Luíz Inácio, Jair Bolsonaro (estética do fundo preto onde há as porcentagens) */
+.progress-bars {
+    display: flex;
+    flex-direction: column;
+    /* flex-flow: wrap; */
+    background-color: black;
+    color: #fff;
+    border: white solid 1px;
+    margin: .5rem 5rem;
+    padding: .5rem 2rem;
+    gap: 1rem;
+}
+
+/* Voto computado com sucesso (estética do texto) */
+.vote-registered {
+    font-size: 1.2rem;
+    text-shadow: 0 0 10px #fff;
+}
+
+/* Luíz Inácio, Jair Bolsonaro (estética das porcentagens) */
+.percentage {
+    color: white;
+    margin: 1rem 0;
+    padding: .3rem;
+    height: 1rem;
+    width: 100%;
+    border-radius: .2rem;
+    /* Transição aplicada numa propriedade */
+    transition: width linear 1s;
+}
+
+/* Luíz Inácio, Jair Bolsonaro (estética da barra do candidato 13) */
+.lula-percentage {
+    background-color: red;
+    box-shadow: 0 0 10px 0 red;
+}
+
+/* Luíz Inácio, Jair Bolsonaro (estética da barra do candidato 22) */
+.bolsonaro-percentage {
+    background-color: blue;
+    box-shadow: 0 0 10px 0 blue;
+}
